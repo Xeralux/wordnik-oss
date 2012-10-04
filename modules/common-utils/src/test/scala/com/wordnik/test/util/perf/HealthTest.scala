@@ -22,6 +22,7 @@ class HealthTest extends FlatSpec with ShouldMatchers {
 
   }
 
+/*
   it should "compute live thread count" in {
     val health = HealthSnapshot.get()
 
@@ -45,6 +46,6 @@ class HealthTest extends FlatSpec with ShouldMatchers {
 
     assert(HealthSnapshot.get().daemonThreadCount - daemonThreadCount1 == 1)
   }
-
+*/
 
 }

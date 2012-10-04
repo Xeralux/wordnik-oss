@@ -66,12 +66,14 @@ object HealthSnapshot {
     health.memory = memory
 
     // compute thread allocation
+	/* No longer public as of java7 - FIXME - kevinh
+
     val threadMxBean = ManagementFactory.getThreadMXBean
     health.liveThreadCount = threadMxBean.getThreadCount
     health.peakThreadCount = threadMxBean.getPeakThreadCount
     health.startedThreadCount = threadMxBean.getTotalStartedThreadCount
     health.daemonThreadCount = threadMxBean.getDaemonThreadCount
-
+	*/
     health
   }
 }
